@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="cj.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('about')">About</a></li>
+            <li><a onclick="showPage('projects')">Projects</a></li>
+            <li><a onclick="showPage('experience')">Experience</a></li>
+            <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <div>
+                <h1>Hi! I'm CJ MATIBAG</h1>
+                <p>I enjoy learning, connecting with people, exploring new skills, and turning ideas into reality.</p>
+            </div>
+            <div>
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-content" style="display: flex; align-items: center; gap: 20px;">
+        
+        <p style="flex: 1;">
+            I am a Computer Engineering Technology student who is passionate about designing and learning new things.
+            I enjoy working on projects where I can apply my creativity and knowledge to solve problems.
+            I believe that learning is a continuous process and I strive to give my best in everything I do.
+            I like collaborating with others and working in a team because it helps me grow and improve.
+            My goal is to continue developing my skills and gain more knowledge in technology so I can succeed in my chosen field.
+        </p>
+
+        <img src="about.jpg" alt="About Me Image" style="width: 250px; height: auto; border-radius: 10px;">
+        
+    </div>
+</section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="cwts.jpg" alt="CWTS Project">
+                <h3>Citizens in the Community of Irosinbahan (CWTS)</h3>
+            </div>
+
+            <div class="project-card">
+                <img src="digital.jpg" alt="Digital Literacy">
+                <h3>Digital Literacy Program</h3>
+            </div>
+        </div>
+
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="skill.jpg" alt="Communication Skill">
+                <h3>Communication Skill</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="team.jpg" alt="Teamwork">
+                <h3>Teamwork & Collaboration</h3>
+            </div>
+        </div>
+    </section>
+
+   <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="about-content" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+
+        <div style="flex: 1;">
+            <p>
+                As a crew member, I learned the importance of teamwork and proper customer service
+                by observing how the crew collaborates during busy hours. This experience helped me
+                improve my communication skills, adaptability, and ability to work efficiently under pressure.
+            </p>
+        </div>
+
+        <div>
+            <img src="about.jpg" alt="Experience Image" style="width: 250px; height: auto; border-radius: 10px;">
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-info">
+            <p>📞 09099227865</p>
+            <p>📧 cjmatibag2@gmail.com</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('home').style.display = 'block';
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('section');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
